@@ -1,3 +1,9 @@
+// functions should be small
+// do one thing !!!
+// function name should say what they do
+// avoid side effect
+// remove unneeded code
+
 interface dateDetail {
   idOfPersonGoWith: string;
   starTime: string;
