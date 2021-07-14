@@ -1,7 +1,7 @@
 //Avoid side effects
 const splitIntoFirstAndLastName = (name) => name.split(' ')
 
-let vietCuteFullName = 'Ha Quoc Viet'
-let newVietCuteFullName = splitIntoFirstAndLastName(vietCuteFullName)
+let vietFullName = 'Ha Quoc Viet'
+let newVietFullName = splitIntoFirstAndLastName(vietFullName)
 
 console.log(newVietCuteFullName)

@@ -1,16 +1,22 @@
+// functions should be small
+// do one thing !!!
+// function name should say what they do
+// avoid side effect
+// remove unneeded code
+
 interface dateDetail {
-  idOfPersonGoWith: string;
-  starTime: string;
-  endTime: string;
+  idOfPersonGoWith: string
+  starTime: string
+  endTime: string
   clothe?: {
-    kindOfShirt: string;
-    kindOfPant: string;
-  };
+    kindOfShirt: string
+    kindOfPant: string
+  }
 }
 
 interface personDetail {
-  userId: string;
-  dateInformation: dateDetail;
+  userId: string
+  dateInformation: dateDetail
 }
 
 const checkTheDateDetail1 = ({ userId, dateInformation }: personDetail) => {
@@ -19,5 +25,5 @@ const checkTheDateDetail1 = ({ userId, dateInformation }: personDetail) => {
   !!dateInformation.clothe &&
   dateInformation.clothe.kindOfPant
     ? true
-    : false;
-};
+    : false
+}
