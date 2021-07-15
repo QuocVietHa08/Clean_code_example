@@ -1,7 +1,3 @@
-// meaningful and clear variable names
-// clear declarations names
-// constants should be all capital letters
-
 interface account1 {
   expired: boolean
 }

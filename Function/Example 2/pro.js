@@ -1,6 +1,6 @@
 let a = {
-    foo:"",
-    bar:"",
+  foo: '',
+  bar: '',
 }
 
 let c = 10

@@ -5,25 +5,25 @@
 // remove unneeded code
 
 interface dateDetail {
-  idOfPersonGoWith: string;
-  starTime: string;
-  endTime: string;
+  idOfPersonGoWith: string
+  starTime: string
+  endTime: string
   clothe?: {
-    kindOfShirt: string;
-    kindOfPant: string;
-  };
+    kindOfShirt: string
+    kindOfPant: string
+  }
 }
 
 interface personDetail {
-  userId: string;
-  dateInformation: dateDetail;
+  userId: string
+  dateInformation: dateDetail
 }
 
 const checkTheDateDetail2 = ({ userId, dateInformation }: personDetail) => {
-  const checkTheDate = new Date() == new Date(dateInformation.starTime);
-  const checkThePerson = userId == dateInformation.idOfPersonGoWith;
+  const checkTheDate = new Date() == new Date(dateInformation.starTime)
+  const checkThePerson = userId == dateInformation.idOfPersonGoWith
   const checkThatPersonCloth =
-    !!dateInformation.clothe && dateInformation.clothe.kindOfPant;
+    !!dateInformation.clothe && dateInformation.clothe.kindOfPant
 
-  checkTheDate && checkThePerson && checkThatPersonCloth ? true : false;
-};
+  checkTheDate && checkThePerson && checkThatPersonCloth ? true : false
+}
